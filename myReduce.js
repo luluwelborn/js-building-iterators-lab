@@ -4,8 +4,15 @@
 function myReduce(arr, callback) {
 
 //  CODE INSIDE HERE   //
+	var newObject = null;
 
+	for (var i=0; i < arr.length; i++){
+  		newObject = callback(newObject,arr[i],i,arr);
+  		return newObject;
+  }
 }
+
+
 
 /*
  Best if you don't code out here.
